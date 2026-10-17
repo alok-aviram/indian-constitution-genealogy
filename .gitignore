@@ -1,0 +1,13 @@
+# private working files
+private/
+
+recording/
+recording*/
+
+.DS_Store
+__pycache__/
+*.pyc
+*.part
+
+# local VS Code workspace
+*.code-workspace
