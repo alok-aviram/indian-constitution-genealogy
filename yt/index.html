@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alok Aviram (@Alok_Aviram) — The Framers on YouTube</title>
+  <meta name="description" content="कौन थे हमारे संविधान के रचयिता? Watch the full 27-minute primary-source documentary on YouTube (@Alok_Aviram).">
+  <meta property="og:title" content="Alok Aviram (@Alok_Aviram) — Watch on YouTube">
+  <meta property="og:description" content="कौन थे हमारे संविधान के रचयिता? Watch the full 27-minute primary-source documentary on YouTube.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://alok-aviram.github.io/indian-constitution-genealogy/yt/">
+  <meta property="og:image" content="https://alok-aviram.github.io/indian-constitution-genealogy/Fundamental_Rights_People_Grid.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      min-height: 100vh;
+      background: radial-gradient(circle at 50% 25%, #16284c 0%, #091224 55%, #050a14 100%);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      text-align: center;
+    }
+    .card {
+      max-width: 420px;
+      width: 100%;
+      background: rgba(15, 26, 50, 0.92);
+      border: 2px solid rgba(240, 184, 73, 0.55);
+      border-radius: 20px;
+      padding: 32px 24px;
+      box-shadow: 0 16px 48px rgba(0, 0, 0, 0.75);
+    }
+    .badge {
+      display: inline-block;
+      background: linear-gradient(90deg, #6e1116 0%, #9b1b22 50%, #6e1116 100%);
+      border: 1.5px solid #f0b849;
+      border-radius: 30px;
+      padding: 6px 18px;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+      color: #fff3d1;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+    }
+    h1 {
+      font-size: 24px;
+      font-weight: 800;
+      color: #f6b93b;
+      line-height: 1.3;
+      margin-bottom: 8px;
+    }
+    p {
+      font-size: 15px;
+      color: #dce6f7;
+      line-height: 1.5;
+      margin-bottom: 24px;
+    }
+    .btn {
+      display: block;
+      width: 100%;
+      background: linear-gradient(90deg, #d31018 0%, #ff1e27 50%, #d31018 100%);
+      border: 2px solid #ffffff;
+      border-radius: 50px;
+      padding: 15px 24px;
+      font-size: 17px;
+      font-weight: 800;
+      color: #ffffff;
+      text-decoration: none;
+      box-shadow: 0 8px 25px rgba(229, 9, 20, 0.45);
+      margin-bottom: 14px;
+    }
+    .sub-link {
+      display: inline-block;
+      font-size: 13px;
+      color: #9cb3d8;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="badge">THE FRAMERS • ALOK AVIRAM</div>
+    <h1>कौन थे हमारे संविधान के रचयिता?</h1>
+    <p>Opening the YouTube App to <strong>@Alok_Aviram</strong>…</p>
+    <a id="appBtn" class="btn" href="https://www.youtube.com/@Alok_Aviram">▶ Open in YouTube App</a>
+    <a id="webLink" class="sub-link" href="https://www.youtube.com/@Alok_Aviram">Continue in browser instead</a>
+  </div>
+
+  <script>
+    (function() {
+      var ua = navigator.userAgent || "";
+      var isBot = /facebookexternalhit|Facebot|Twitterbot|WhatsApp|Slackbot|TelegramBot/i.test(ua);
+      if (isBot) return;
+
+      var params = new URLSearchParams(window.location.search);
+      var vid = params.get("v");
+      var targetPath = vid ? ("www.youtube.com/watch?v=" + encodeURIComponent(vid)) : "www.youtube.com/@Alok_Aviram";
+      var webUrl = "https://" + targetPath;
+      var desktopUrl = vid ? webUrl : (webUrl + "?sub_confirmation=1");
+
+      var isAndroid = /Android/i.test(ua);
+      var isIOS = /iPhone|iPad|iPod/i.test(ua);
+
+      var androidIntent = "intent://" + targetPath + "#Intent;package=com.google.android.youtube;scheme=https;S.browser_fallback_url=" + encodeURIComponent(webUrl) + ";end";
+      var iosScheme = "vnd.youtube://" + targetPath;
+
+      var appBtn = document.getElementById("appBtn");
+      var webLink = document.getElementById("webLink");
+      webLink.href = webUrl;
+
+      if (isAndroid) {
+        appBtn.href = androidIntent;
+        window.location.replace(androidIntent);
+      } else if (isIOS) {
+        appBtn.href = iosScheme;
+        window.location.href = iosScheme;
+        setTimeout(function() {
+          if (!document.hidden) {
+            window.location.replace(webUrl);
+          }
+        }, 1800);
+      } else {
+        appBtn.href = desktopUrl;
+        window.location.replace(desktopUrl);
+      }
+    })();
+  </script>
+</body>
+</html>
